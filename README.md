@@ -2,6 +2,14 @@
 
 Este repositório tem por objetivo apresentar como utilizar o processamento de dados SQL unificado na plataforma Carol.
 
+O contexto é de um cliente que precisa visualizar por meio de um dashboard estatísticas de rotas de vôos.
+
+As ferramentas utilizadas foram:
+
+- TOTVS Carol com processamento SQL unificado
+- MySQL rodando dentro de uma máquina virtual VirtualBox com Windows 10
+- MySQL Workbench para visualizar os dados
+
 ## 1. Configurar ambiente
 
 Vamos utilizar o banco de dados MySQL, a ferramenta de visualização de dados MySQL Workbench e uma máquina virtual VirtualBox com Windows 10. Todos esses softwares são gratuitos.
