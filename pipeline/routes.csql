@@ -1,0 +1,105 @@
+-- pk: airlineid,destinationairportid,sourceairportid
+
+WITH lk_airlines AS (
+  SELECT
+    aa.mdmTenantId,
+    aa.airline_id,
+    aa.name
+  FROM
+  (
+    SELECT
+      a.mdmTenantId,
+      a.airline_id,
+      a.name,
+      ROW_NUMBER() OVER (PARTITION BY a.mdmTenantId, a.airline_id ORDER BY a.mdmCounterForEntity DESC) AS ranking
+    FROM
+      stg_mysql_airlines AS a
+    WHERE
+      a.mdmDeleted IS NULL OR a.mdmDeleted = FALSE
+  ) AS aa
+  WHERE
+    aa.ranking = 1
+),
+
+lk_airports AS (
+  SELECT
+    aa.mdmTenantId,
+    aa.airport_id,
+    aa.name
+  FROM
+  (
+    SELECT
+      a.mdmTenantId,
+      a.airport_id,
+      a.name,
+      ROW_NUMBER() OVER (PARTITION BY a.mdmTenantId, a.airport_id ORDER BY a.mdmCounterForEntity DESC) AS ranking
+    FROM
+      stg_mysql_airports AS a
+    WHERE
+      a.mdmDeleted IS NULL OR a.mdmDeleted = FALSE
+  ) AS aa
+  WHERE
+    aa.ranking = 1
+),
+
+lk_routes AS (
+  SELECT
+    rr.*
+  FROM
+  (
+    SELECT
+      r.*,
+      ROW_NUMBER() OVER (PARTITION BY r.mdmTenantId, r.route_id ORDER BY r.mdmCounterForEntity DESC) AS ranking
+    FROM
+      stg_mysql_routes AS r
+    WHERE
+      r.mdmDeleted IS NULL OR r.mdmDeleted = FALSE
+  ) AS rr
+  WHERE
+    rr.ranking = 1
+    --timestamp-- AND stg.mdmCounterForEntity > {{start_from}}
+),
+
+routes AS (
+  SELECT
+    stg.mdmTenantId as tenantid,
+    stg.route_id AS routeid,
+    stg.airline_id AS airlineid,
+    lines.name AS airlinename,
+    stg.source_airport_id AS sourceairportid,
+    sports.name AS sourceairportname,
+    stg.destination_airport_id AS destinationairportid,
+    dports.name AS destinationairportname
+    --metadataNoId--
+  FROM
+    lk_routes AS stg
+    LEFT JOIN lk_airlines AS lines
+      ON lines.mdmTenantId = stg.mdmTenantId
+      AND lines.airline_id = stg.airline_id
+    LEFT JOIN lk_airports AS sports
+      ON sports.mdmTenantId = stg.mdmTenantId
+      AND sports.airport_id = stg.source_airport_id
+    LEFT JOIN lk_airports AS dports
+      ON dports.mdmTenantId = stg.mdmTenantId
+      AND dports.airport_id = stg.destination_airport_id
+)
+
+SELECT
+  * EXCEPT(tenantid),
+    TO_HEX(MD5(LOWER(CONCAT(
+        tenantid,
+        'routes{',
+            '"airlineid":"', airlineid, '",',
+            '"destinationairportid":"', destinationairportid, '",',
+            '"sourceairportid":"', sourceairportid, '"',
+        '}'
+    )))) AS __mdmId,
+    (
+        (airlineid IS NULL OR airlineid = 0)
+        OR
+        (destinationairportid IS NULL OR destinationairportid = 0)
+        OR
+        (sourceairportid IS NULL OR sourceairportid = 0)
+    ) AS mdmDeleted
+FROM
+  routes

@@ -1,0 +1,44 @@
+{
+    "defaults":
+    {
+        "cronExpressions":
+        [
+            "0 0/5 * ? * * *"
+        ],
+        "prepareScripts":[]
+    },
+    "pipelines":
+    [
+        {
+            "pipelineName": "routes",
+            "pipelineDescription": "Companhias aéres que operam vôos.",
+            "outputDataModelName": "routes",
+            "overlapDeltaMinutes": 60,
+            "saveToCds": true,
+            "saveToUnified": true,
+            "saveToRealtime": false,
+            "sendToSubscriptions": false,
+            "timeZone": "America/Sao_Paulo",
+            "processScript": "routes.csql",
+            "sourceEntities":
+            {
+                "dataModels": [],
+                "stagings":
+                [
+                    {
+                        "connectorName": "mysql",
+                        "stagingName": "airlines"
+                    },
+                    {
+                        "connectorName": "mysql",
+                        "stagingName": "airports"
+                    },
+                    {
+                        "connectorName": "mysql",
+                        "stagingName": "routes"
+                    }
+                ]
+            }
+        }
+    ]
+}
