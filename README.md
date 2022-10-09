@@ -4,7 +4,7 @@ Este repositório tem por objetivo apresentar como utilizar o processamento de d
 
 ## 1. Configurar ambiente
 
-Neste tutorial, vamos utilizar o banco de dados MySQL, a ferramenta de visualização de dados MySQL Workbench e uma máquina virtual VirtualBox com Windows 10. Todos esses softwares são gratuitos.
+Vamos utilizar o banco de dados MySQL, a ferramenta de visualização de dados MySQL Workbench e uma máquina virtual VirtualBox com Windows 10. Todos esses softwares são gratuitos.
 
 ### 1.1. Máquina virtual
 
