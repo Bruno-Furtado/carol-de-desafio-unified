@@ -24,11 +24,9 @@ Agora inicie a máquina virtual e siga os passos para concluir a instalação do
 
 Todos os passos descritos nesta etapa serão realizados dentro da máquina virtual recém instalada.
 
-Inicialmente entre [neste link](https://dev.mysql.com/downloads/installer/) para baixar o MySQL para Windows. Selecione a primeira opção.
+Inicialmente entre [neste link](https://dev.mysql.com/downloads/installer/) para baixar o MySQL para Windows. Selecione a primeira opção. Com o instalador em mãos, siga as etapas sugeridas (caso hajam dúvidas, existem diversos links na internet que explicam como realizar esse procedimento).
 
-> Atenção: é possível realizar o download sem login clicando em um link discreto, localizado um pouco mais abaixo dos botões em destaque.
-
-Com o instalador em mãos, siga as etapas sugeridas (caso hajam dúvidas, existem diversos links na internet que explicam como realizar esse procedimento).
+> É possível realizar o download sem login clicando em um link discreto, localizado um pouco mais abaixo dos botões em destaque.
 
 Para visualizar o banco de dados utilizaremos o MySQL Workbench que pode ser obtido [neste link](https://dev.mysql.com/downloads/workbench/). Siga o fluxo padrão para realizar a instalação desta ferramenta.
 
