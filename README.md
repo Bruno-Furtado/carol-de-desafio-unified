@@ -10,7 +10,7 @@ Vamos utilizar o banco de dados MySQL, a ferramenta de visualização de dados M
 
 O primeiro passo é baixar e instalar a máquina virtual em seu computador. Para baixar basta entrar [neste link](https://www.virtualbox.org/wiki/Downloads) e selecionar o seu sistema operacional. A instalação é simples e segue um fluxo padrão.
 
-> Atenção: caso esteja utilizando MacOS, certifique-se de ir até as configurações do sistema e permitir o uso do software em "Segurança e privacidade".
+> Caso esteja utilizando MacOS, certifique-se de ir até as configurações do sistema e permitir o uso do software em "Segurança e privacidade".
 
 O segundo passo é baixar a imagem do sistema operacional Windows 10. A imagem está disponível gratuitamente [neste link](https://www.microsoft.com/en-us/software-download/windows10ISO).
 
