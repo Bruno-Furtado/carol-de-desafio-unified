@@ -44,7 +44,7 @@ lk_airports AS (
 
 lk_routes AS (
   SELECT
-    rr.*
+    stg.*
   FROM
   (
     SELECT
@@ -54,9 +54,9 @@ lk_routes AS (
       stg_mysql_routes AS r
     WHERE
       r.mdmDeleted IS NULL OR r.mdmDeleted = FALSE
-  ) AS rr
+  ) AS stg
   WHERE
-    rr.ranking = 1
+    stg.ranking = 1
     --timestamp-- AND stg.mdmCounterForEntity > {{start_from}}
 ),
 
