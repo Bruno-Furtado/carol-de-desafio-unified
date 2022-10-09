@@ -115,7 +115,9 @@ Com ele instalado, vamos configura-lo para que o mesmo envie os dados do MySQL p
 
 ## 4. Configurar processamento SQL unificado
 
-O primeiro passo é instalar o aplicativo **OpenFlights** no ambiente unificado (**furtadounif**).
+O primeiro passo é gerar uma release do app **OpenFlights** no ambiente de desenvolvimento (**furtadodev**). Essa release precisa ser aprovada por um Carol Admin.
+
+Logo em seguinda instale o aplicativo **OpenFlights** no ambiente unificado (**furtadounif**).
 
 Depois disso, tendo a certeza de que todos os dados do 2C foram enviados ao ambiente do cliente, temos de instalar o aplicativo no ambiente do mesmo (**furtadocustomer**).
 
