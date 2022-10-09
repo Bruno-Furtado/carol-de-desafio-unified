@@ -44,7 +44,7 @@ O próximo passo consiste na criação dos seguintes ambientes:
 | [furtadounif](https://mobile.carol.ai/furtadounif) | Big | Unified | Este é o ambiente que será o responsável por processar os dados de todos os customers que possuem o aplicativo OpenFlights. |
 | [furtadocustomer](https://mobile.carol.ai/furtadocustomer) | Small | Customer | Este é um ambiente que simula um customer que faz uso do aplicativo OpenFlights. |
 
-> Atenção: todos os ambientes criados são SQL Processing Only e não possuem a camada RT habilitada (seguindo as orientações mais atuais da plataforma).
+> Todos os ambientes criados são SQL Processing Only e não possuem a camada RT habilitada (seguindo as orientações mais atuais da plataforma).
 
 ### App OpenFlights
 
