@@ -9,6 +9,7 @@ As ferramentas utilizadas foram:
 - TOTVS Carol com processamento SQL unificado
 - MySQL rodando dentro de uma máquina virtual VirtualBox com Windows 10
 - MySQL Workbench para visualizar os dados
+- Carol Insights Studio para geração de gráficos e dashboard
 
 ## 1. Configurar ambiente
 
