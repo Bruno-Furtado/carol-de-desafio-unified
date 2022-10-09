@@ -40,9 +40,9 @@ O próximo passo consiste na criação dos seguintes ambientes:
 
 | Nome | Tamanho | Tipo | Informações |
 | --- | --- | --- | --- |
-| [furtadodev](https://mobile.carol.ai/furtadodev) | Small | Dev | Este é o ambiente que será utilizado para desenvolvimento do aplicativo OpenFlights |
-| [furtadounif](https://mobile.carol.ai/furtadounif) | Big | Unified | Este é o ambiente que será o responsável por processar os dados de todos os customers que possuem o aplicativo OpenFlights |
-| [furtadocustomer](https://mobile.carol.ai/furtadocustomer) | Small | Customer | Este é um ambiente que simula um customer que faz uso do aplicativo OpenFlights |
+| [furtadodev](https://mobile.carol.ai/furtadodev) | Small | Dev | Este é o ambiente que será utilizado para desenvolvimento do aplicativo OpenFlights. |
+| [furtadounif](https://mobile.carol.ai/furtadounif) | Big | Unified | Este é o ambiente que será o responsável por processar os dados de todos os customers que possuem o aplicativo OpenFlights. |
+| [furtadocustomer](https://mobile.carol.ai/furtadocustomer) | Small | Customer | Este é um ambiente que simula um customer que faz uso do aplicativo OpenFlights. |
 
 > Atenção: todos os ambientes criados são SQL Processing Only e não possuem a camada RT habilitada (seguindo as orientações mais atuais da plataforma).
 
