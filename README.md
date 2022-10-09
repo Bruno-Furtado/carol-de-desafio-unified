@@ -2,7 +2,7 @@
 
 Este repositório tem por objetivo apresentar como utilizar o processamento de dados SQL unificado na plataforma Carol.
 
-O contexto é de um cliente que precisa visualizar por meio de um dashboard estatísticas de rotas de vôos.
+O contexto é de um cliente que precisa visualizar por meio de um dashboard estatísticas de rotas de vôos e o resultado final pode ser visualizado [aqui](https://carol.ai/insights/dashboard/452-openflights).
 
 As ferramentas utilizadas foram:
 
