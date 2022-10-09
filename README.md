@@ -117,9 +117,11 @@ Uma vez terminada a instalação no ambiente do cliente, a própria Carol inicia
 
 Para este exemplo vamos utilizar o [Carol Insights](https://carol.ai/insights) para apresentar gráficos a partir dos dados gerados para DM `Routes`.
 
-Os gráficos foram gerados a partir da tenant unificada pois o intuito aqui foi exemplificar como é possígel gerar estatísticas de todos os clientes que possuem um app instalado a partir de uma fonte de dados única. As queries podem ser encontradas [nesta pasta](https://github.com/Bruno-Furtado/carol-de-desafio-unified/tree/main/insights).
+Os gráficos foram gerados a partir da tenant unificada pois o intuito aqui foi exemplificar como é possígel gerar estatísticas de todos os clientes que possuem um app instalado a partir de uma fonte de dados única. Para tanto, um token do tipo `Google Service Account` foi gerado no ambiente.
 
-[Este dashboard](https://carol.ai/insights/dashboard/452-openflights) apresenta os seguintes gráficos como resultado final deste desafio:
+Com relação aos gráficos, eles foram gerados a partir de queries que estão [nesta pasta](https://github.com/Bruno-Furtado/carol-de-desafio-unified/tree/main/insights).
+
+Por fim, [este dashboard](https://carol.ai/insights/dashboard/452-openflights) apresenta os seguintes gráficos como resultado final deste desafio:
 - Rotas de vô por companhia aérea
 - Top 10 companhias com mais vôos
 - Top 10 destinos de voôs
