@@ -1,0 +1,867 @@
+{
+    "description": {},
+    "entityTemplateName": "routes",
+    "entityTemplateType": [
+        {
+            "mdmDescription": {
+                "en-US": "Location",
+                "pt-BR": "Localização"
+            },
+            "mdmEntityType": "mdmEntityTemplateType",
+            "mdmId": "d5189de027922f81005951e6efe0efd5",
+            "mdmModelEntityTemplateId": "",
+            "mdmName": "location",
+            "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+        }
+    ],
+    "entityValidationRules": [
+        [
+            {
+                "mdmEntityTemplateId": "a24150eb99804fd1954bd5fc890e986f",
+                "mdmEntityType": "mdmEntityValidationRule",
+                "mdmFieldFunction": {
+                    "mdmAllowValidation": true,
+                    "mdmCreateNewVariable": true,
+                    "mdmDeprecated": false,
+                    "mdmDescription": {
+                        "en-US": "Check if parameter is empty",
+                        "pt-BR": "Verifica se o parâmetro é vazio"
+                    },
+                    "mdmEntityType": "mdmFieldFunction",
+                    "mdmFunctionType": "JAVA",
+                    "mdmId": "b002c786e0809adde0a7aa2af8af5b61",
+                    "mdmJavaScript": "",
+                    "mdmLabel": {
+                        "en-US": "Is Empty"
+                    },
+                    "mdmName": "IS_EMPTY",
+                    "mdmNegateLabel": {
+                        "en-US": "Is Not Empty"
+                    },
+                    "mdmParameters": [
+                        {
+                            "controlType": "DROPDOWN",
+                            "defaultValue": "",
+                            "description": {
+                                "en-US": "the input string",
+                                "pt-BR": "texto que será consistido"
+                            },
+                            "name": "Input",
+                            "optionValues": [],
+                            "required": true,
+                            "type": "STRING"
+                        }
+                    ],
+                    "mdmReturnType": "BOOLEAN",
+                    "mdmSupportQuery": true,
+                    "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+                },
+                "mdmFieldFunctionId": "b002c786e0809adde0a7aa2af8af5b61",
+                "mdmId": "43958e7bc35d4822a5dabb4c9bec1e4c",
+                "mdmInvert": false,
+                "mdmParameterValues": [
+                    "@@{9beb480526b0435f97eeb6275b4fb43a}"
+                ],
+                "mdmState": "NOT_CHANGED",
+                "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+            }
+        ],
+        [
+            {
+                "mdmEntityTemplateId": "a24150eb99804fd1954bd5fc890e986f",
+                "mdmEntityType": "mdmEntityValidationRule",
+                "mdmFieldFunction": {
+                    "mdmAllowValidation": true,
+                    "mdmCreateNewVariable": true,
+                    "mdmDeprecated": false,
+                    "mdmDescription": {
+                        "en-US": "Check if parameter is empty",
+                        "pt-BR": "Verifica se o parâmetro é vazio"
+                    },
+                    "mdmEntityType": "mdmFieldFunction",
+                    "mdmFunctionType": "JAVA",
+                    "mdmId": "b002c786e0809adde0a7aa2af8af5b61",
+                    "mdmJavaScript": "",
+                    "mdmLabel": {
+                        "en-US": "Is Empty"
+                    },
+                    "mdmName": "IS_EMPTY",
+                    "mdmNegateLabel": {
+                        "en-US": "Is Not Empty"
+                    },
+                    "mdmParameters": [
+                        {
+                            "controlType": "DROPDOWN",
+                            "defaultValue": "",
+                            "description": {
+                                "en-US": "the input string",
+                                "pt-BR": "texto que será consistido"
+                            },
+                            "name": "Input",
+                            "optionValues": [],
+                            "required": true,
+                            "type": "STRING"
+                        }
+                    ],
+                    "mdmReturnType": "BOOLEAN",
+                    "mdmSupportQuery": true,
+                    "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+                },
+                "mdmFieldFunctionId": "b002c786e0809adde0a7aa2af8af5b61",
+                "mdmId": "336c00561be3435b81bb86ba42519da5",
+                "mdmInvert": false,
+                "mdmParameterValues": [
+                    "@@{8468d784f30b408c94867c8c28176576}"
+                ],
+                "mdmState": "NOT_CHANGED",
+                "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+            }
+        ],
+        [
+            {
+                "mdmEntityTemplateId": "a24150eb99804fd1954bd5fc890e986f",
+                "mdmEntityType": "mdmEntityValidationRule",
+                "mdmFieldFunction": {
+                    "mdmAllowValidation": true,
+                    "mdmCreateNewVariable": true,
+                    "mdmDeprecated": false,
+                    "mdmDescription": {
+                        "en-US": "Check if parameter is empty",
+                        "pt-BR": "Verifica se o parâmetro é vazio"
+                    },
+                    "mdmEntityType": "mdmFieldFunction",
+                    "mdmFunctionType": "JAVA",
+                    "mdmId": "b002c786e0809adde0a7aa2af8af5b61",
+                    "mdmJavaScript": "",
+                    "mdmLabel": {
+                        "en-US": "Is Empty"
+                    },
+                    "mdmName": "IS_EMPTY",
+                    "mdmNegateLabel": {
+                        "en-US": "Is Not Empty"
+                    },
+                    "mdmParameters": [
+                        {
+                            "controlType": "DROPDOWN",
+                            "defaultValue": "",
+                            "description": {
+                                "en-US": "the input string",
+                                "pt-BR": "texto que será consistido"
+                            },
+                            "name": "Input",
+                            "optionValues": [],
+                            "required": true,
+                            "type": "STRING"
+                        }
+                    ],
+                    "mdmReturnType": "BOOLEAN",
+                    "mdmSupportQuery": true,
+                    "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+                },
+                "mdmFieldFunctionId": "b002c786e0809adde0a7aa2af8af5b61",
+                "mdmId": "05459ee138bd4d5a883660c12b8b591a",
+                "mdmInvert": false,
+                "mdmParameterValues": [
+                    "@@{ffb03397f42440a49a28795d75e29311}"
+                ],
+                "mdmState": "NOT_CHANGED",
+                "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+            }
+        ]
+    ],
+    "evictStaging": true,
+    "fieldMergeRules": [
+        [
+            {
+                "mdmConsiderEmpty": false,
+                "mdmEntityType": "mdmFieldMergeRule",
+                "mdmFuzzyConfiguration": {
+                    "mdmAutomaticThreshold": 0,
+                    "mdmRecommendationThreshold": 0
+                },
+                "mdmId": "2fae70b0cdec4339b5d273ad86ee764a",
+                "mdmMasterEntityId": "a24150eb99804fd1954bd5fc890e986f",
+                "mdmMasterFieldId": "9beb480526b0435f97eeb6275b4fb43a",
+                "mdmMergeType": "EXACT_MATCH",
+                "mdmState": "NOT_CHANGED",
+                "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+            },
+            {
+                "mdmConsiderEmpty": false,
+                "mdmEntityType": "mdmFieldMergeRule",
+                "mdmFuzzyConfiguration": {
+                    "mdmAutomaticThreshold": 0,
+                    "mdmRecommendationThreshold": 0
+                },
+                "mdmId": "af1b12297c524fb3993b53e6c01630d0",
+                "mdmMasterEntityId": "a24150eb99804fd1954bd5fc890e986f",
+                "mdmMasterFieldId": "8468d784f30b408c94867c8c28176576",
+                "mdmMergeType": "EXACT_MATCH",
+                "mdmState": "NOT_CHANGED",
+                "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+            },
+            {
+                "mdmConsiderEmpty": false,
+                "mdmEntityType": "mdmFieldMergeRule",
+                "mdmFuzzyConfiguration": {
+                    "mdmAutomaticThreshold": 0,
+                    "mdmRecommendationThreshold": 0
+                },
+                "mdmId": "3e3dd43e67074dbbae22816d86974c4a",
+                "mdmMasterEntityId": "a24150eb99804fd1954bd5fc890e986f",
+                "mdmMasterFieldId": "ffb03397f42440a49a28795d75e29311",
+                "mdmMergeType": "EXACT_MATCH",
+                "mdmState": "NOT_CHANGED",
+                "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+            }
+        ]
+    ],
+    "fields": [
+        {
+            "mdmCustomDescription": {
+                "en-US": "ID único da companhia aérea"
+            },
+            "mdmCustomEnumValues": [],
+            "mdmCustomLabel": {
+                "en-US": "Airline Id"
+            },
+            "mdmEnableAddressCleansing": false,
+            "mdmFieldSurvivorshipRuleIds": [
+                "2ffcac9729194314a9b8a42bbedfb0e8"
+            ],
+            "mdmFieldSurvivorshipRules": [
+                {
+                    "mdmEntityTemplateId": "a24150eb99804fd1954bd5fc890e986f",
+                    "mdmEntityType": "mdmFieldSurvivorshipRule",
+                    "mdmFieldId": "9beb480526b0435f97eeb6275b4fb43a",
+                    "mdmFunction": {
+                        "mdmDescription": {
+                            "en-US": "the most recent value",
+                            "pt-BR": "o valor mais recente"
+                        },
+                        "mdmEntityType": "mdmSurvivorshipFunction",
+                        "mdmId": "27439baa3c0bbf323ca50b46fb95ea51",
+                        "mdmLabel": {
+                            "en-US": "Recency"
+                        },
+                        "mdmName": "RECENCY",
+                        "mdmParameters": [],
+                        "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+                    },
+                    "mdmFunctionId": "27439baa3c0bbf323ca50b46fb95ea51",
+                    "mdmId": "2ffcac9729194314a9b8a42bbedfb0e8",
+                    "mdmParameterValues": [],
+                    "mdmParentFieldId": "",
+                    "mdmState": "NOT_CHANGED",
+                    "mdmSurviveUsingFieldName": "",
+                    "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+                }
+            ],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFlagRuleIds": [],
+            "mdmFlagRules": [],
+            "mdmForeignKeyField": false,
+            "mdmHasMapping": false,
+            "mdmHasView": false,
+            "mdmHidden": false,
+            "mdmId": "9beb480526b0435f97eeb6275b4fb43a",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmMappingDataType": "long",
+            "mdmMappings": [],
+            "mdmName": "airlineid",
+            "mdmRequiredBy": "",
+            "mdmSizeLimit": 2048,
+            "mdmSkipRuleIds": [],
+            "mdmSkipRules": [],
+            "mdmTags": []
+        },
+        {
+            "mdmCustomDescription": {
+                "en-US": "Nome da companhia aérea"
+            },
+            "mdmCustomEnumValues": [],
+            "mdmCustomLabel": {
+                "en-US": "Airline Name"
+            },
+            "mdmEnableAddressCleansing": false,
+            "mdmFieldSurvivorshipRuleIds": [
+                "e966aa1971e44bc1a0bb8eb59262fdbf"
+            ],
+            "mdmFieldSurvivorshipRules": [
+                {
+                    "mdmEntityTemplateId": "a24150eb99804fd1954bd5fc890e986f",
+                    "mdmEntityType": "mdmFieldSurvivorshipRule",
+                    "mdmFieldId": "30d2eeacd6564718b2f8581ce1da276e",
+                    "mdmFunction": {
+                        "mdmDescription": {
+                            "en-US": "the most recent value",
+                            "pt-BR": "o valor mais recente"
+                        },
+                        "mdmEntityType": "mdmSurvivorshipFunction",
+                        "mdmId": "27439baa3c0bbf323ca50b46fb95ea51",
+                        "mdmLabel": {
+                            "en-US": "Recency"
+                        },
+                        "mdmName": "RECENCY",
+                        "mdmParameters": [],
+                        "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+                    },
+                    "mdmFunctionId": "27439baa3c0bbf323ca50b46fb95ea51",
+                    "mdmId": "e966aa1971e44bc1a0bb8eb59262fdbf",
+                    "mdmParameterValues": [],
+                    "mdmParentFieldId": "",
+                    "mdmState": "NOT_CHANGED",
+                    "mdmSurviveUsingFieldName": "",
+                    "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+                }
+            ],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFlagRuleIds": [],
+            "mdmFlagRules": [],
+            "mdmForeignKeyField": false,
+            "mdmHasMapping": false,
+            "mdmHasView": false,
+            "mdmHidden": false,
+            "mdmId": "30d2eeacd6564718b2f8581ce1da276e",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmMappingDataType": "string",
+            "mdmMappings": [],
+            "mdmName": "airlinename",
+            "mdmRequiredBy": "",
+            "mdmSizeLimit": 300,
+            "mdmSkipRuleIds": [],
+            "mdmSkipRules": [],
+            "mdmTags": []
+        },
+        {
+            "mdmCustomDescription": {
+                "en-US": "ID único do aeroporto de chegada"
+            },
+            "mdmCustomEnumValues": [],
+            "mdmCustomLabel": {
+                "en-US": "Destination Airport Id"
+            },
+            "mdmEnableAddressCleansing": false,
+            "mdmFieldSurvivorshipRuleIds": [
+                "924c061619a54e1a97de65adf52ace58"
+            ],
+            "mdmFieldSurvivorshipRules": [
+                {
+                    "mdmEntityTemplateId": "a24150eb99804fd1954bd5fc890e986f",
+                    "mdmEntityType": "mdmFieldSurvivorshipRule",
+                    "mdmFieldId": "ffb03397f42440a49a28795d75e29311",
+                    "mdmFunction": {
+                        "mdmDescription": {
+                            "en-US": "the most recent value",
+                            "pt-BR": "o valor mais recente"
+                        },
+                        "mdmEntityType": "mdmSurvivorshipFunction",
+                        "mdmId": "27439baa3c0bbf323ca50b46fb95ea51",
+                        "mdmLabel": {
+                            "en-US": "Recency"
+                        },
+                        "mdmName": "RECENCY",
+                        "mdmParameters": [],
+                        "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+                    },
+                    "mdmFunctionId": "27439baa3c0bbf323ca50b46fb95ea51",
+                    "mdmId": "924c061619a54e1a97de65adf52ace58",
+                    "mdmParameterValues": [],
+                    "mdmParentFieldId": "",
+                    "mdmState": "NOT_CHANGED",
+                    "mdmSurviveUsingFieldName": "",
+                    "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+                }
+            ],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFlagRuleIds": [],
+            "mdmFlagRules": [],
+            "mdmForeignKeyField": false,
+            "mdmHasMapping": false,
+            "mdmHasView": false,
+            "mdmHidden": false,
+            "mdmId": "ffb03397f42440a49a28795d75e29311",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmMappingDataType": "long",
+            "mdmMappings": [],
+            "mdmName": "destinationairportid",
+            "mdmRequiredBy": "",
+            "mdmSizeLimit": 2048,
+            "mdmSkipRuleIds": [],
+            "mdmSkipRules": [],
+            "mdmTags": []
+        },
+        {
+            "mdmCustomDescription": {
+                "en-US": "Nome do aeroporto de chegada"
+            },
+            "mdmCustomEnumValues": [],
+            "mdmCustomLabel": {
+                "en-US": "Destination Airport Name"
+            },
+            "mdmEnableAddressCleansing": false,
+            "mdmFieldSurvivorshipRuleIds": [
+                "75a135b49bb0409db70cb0ac81834782"
+            ],
+            "mdmFieldSurvivorshipRules": [
+                {
+                    "mdmEntityTemplateId": "a24150eb99804fd1954bd5fc890e986f",
+                    "mdmEntityType": "mdmFieldSurvivorshipRule",
+                    "mdmFieldId": "c3820621ce7243a99682e532f6433c13",
+                    "mdmFunction": {
+                        "mdmDescription": {
+                            "en-US": "the most recent value",
+                            "pt-BR": "o valor mais recente"
+                        },
+                        "mdmEntityType": "mdmSurvivorshipFunction",
+                        "mdmId": "27439baa3c0bbf323ca50b46fb95ea51",
+                        "mdmLabel": {
+                            "en-US": "Recency"
+                        },
+                        "mdmName": "RECENCY",
+                        "mdmParameters": [],
+                        "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+                    },
+                    "mdmFunctionId": "27439baa3c0bbf323ca50b46fb95ea51",
+                    "mdmId": "75a135b49bb0409db70cb0ac81834782",
+                    "mdmParameterValues": [],
+                    "mdmParentFieldId": "",
+                    "mdmState": "NOT_CHANGED",
+                    "mdmSurviveUsingFieldName": "",
+                    "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+                }
+            ],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFlagRuleIds": [],
+            "mdmFlagRules": [],
+            "mdmForeignKeyField": false,
+            "mdmHasMapping": false,
+            "mdmHasView": false,
+            "mdmHidden": false,
+            "mdmId": "c3820621ce7243a99682e532f6433c13",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmMappingDataType": "string",
+            "mdmMappings": [],
+            "mdmName": "destinationairportname",
+            "mdmRequiredBy": "",
+            "mdmSizeLimit": 300,
+            "mdmSkipRuleIds": [],
+            "mdmSkipRules": [],
+            "mdmTags": []
+        },
+        {
+            "mdmCustomDescription": {
+                "en-US": "ID único da rota"
+            },
+            "mdmCustomEnumValues": [],
+            "mdmCustomLabel": {
+                "en-US": "Route Id"
+            },
+            "mdmEnableAddressCleansing": false,
+            "mdmFieldSurvivorshipRuleIds": [
+                "07782d5aff4e4b549616bafd782d9a1f"
+            ],
+            "mdmFieldSurvivorshipRules": [
+                {
+                    "mdmEntityTemplateId": "a24150eb99804fd1954bd5fc890e986f",
+                    "mdmEntityType": "mdmFieldSurvivorshipRule",
+                    "mdmFieldId": "38f29c098c9c4abdb2e501cf5bb0a8e8",
+                    "mdmFunction": {
+                        "mdmDescription": {
+                            "en-US": "the most recent value",
+                            "pt-BR": "o valor mais recente"
+                        },
+                        "mdmEntityType": "mdmSurvivorshipFunction",
+                        "mdmId": "27439baa3c0bbf323ca50b46fb95ea51",
+                        "mdmLabel": {
+                            "en-US": "Recency"
+                        },
+                        "mdmName": "RECENCY",
+                        "mdmParameters": [],
+                        "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+                    },
+                    "mdmFunctionId": "27439baa3c0bbf323ca50b46fb95ea51",
+                    "mdmId": "07782d5aff4e4b549616bafd782d9a1f",
+                    "mdmParameterValues": [],
+                    "mdmParentFieldId": "",
+                    "mdmState": "NOT_CHANGED",
+                    "mdmSurviveUsingFieldName": "",
+                    "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+                }
+            ],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFlagRuleIds": [],
+            "mdmFlagRules": [],
+            "mdmForeignKeyField": false,
+            "mdmHasMapping": false,
+            "mdmHasView": false,
+            "mdmHidden": false,
+            "mdmId": "38f29c098c9c4abdb2e501cf5bb0a8e8",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmMappingDataType": "long",
+            "mdmMappings": [],
+            "mdmName": "routeid",
+            "mdmRequiredBy": "",
+            "mdmSizeLimit": 2048,
+            "mdmSkipRuleIds": [],
+            "mdmSkipRules": [],
+            "mdmTags": []
+        },
+        {
+            "mdmCustomDescription": {
+                "en-US": "ID único do aeroporto de saída"
+            },
+            "mdmCustomEnumValues": [],
+            "mdmCustomLabel": {
+                "en-US": "Source Airport Id"
+            },
+            "mdmEnableAddressCleansing": false,
+            "mdmFieldSurvivorshipRuleIds": [
+                "64ea190c03154ec38dc1a174c2d6e55a"
+            ],
+            "mdmFieldSurvivorshipRules": [
+                {
+                    "mdmEntityTemplateId": "a24150eb99804fd1954bd5fc890e986f",
+                    "mdmEntityType": "mdmFieldSurvivorshipRule",
+                    "mdmFieldId": "8468d784f30b408c94867c8c28176576",
+                    "mdmFunction": {
+                        "mdmDescription": {
+                            "en-US": "the most recent value",
+                            "pt-BR": "o valor mais recente"
+                        },
+                        "mdmEntityType": "mdmSurvivorshipFunction",
+                        "mdmId": "27439baa3c0bbf323ca50b46fb95ea51",
+                        "mdmLabel": {
+                            "en-US": "Recency"
+                        },
+                        "mdmName": "RECENCY",
+                        "mdmParameters": [],
+                        "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+                    },
+                    "mdmFunctionId": "27439baa3c0bbf323ca50b46fb95ea51",
+                    "mdmId": "64ea190c03154ec38dc1a174c2d6e55a",
+                    "mdmParameterValues": [],
+                    "mdmParentFieldId": "",
+                    "mdmState": "NOT_CHANGED",
+                    "mdmSurviveUsingFieldName": "",
+                    "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+                }
+            ],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFlagRuleIds": [],
+            "mdmFlagRules": [],
+            "mdmForeignKeyField": false,
+            "mdmHasMapping": false,
+            "mdmHasView": false,
+            "mdmHidden": false,
+            "mdmId": "8468d784f30b408c94867c8c28176576",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmMappingDataType": "long",
+            "mdmMappings": [],
+            "mdmName": "sourceairportid",
+            "mdmRequiredBy": "",
+            "mdmSizeLimit": 2048,
+            "mdmSkipRuleIds": [],
+            "mdmSkipRules": [],
+            "mdmTags": []
+        },
+        {
+            "mdmCustomDescription": {
+                "en-US": "Nome do aeroporto de saída"
+            },
+            "mdmCustomEnumValues": [],
+            "mdmCustomLabel": {
+                "en-US": "Source Airport Name"
+            },
+            "mdmEnableAddressCleansing": false,
+            "mdmFieldSurvivorshipRuleIds": [
+                "c3bbf9c28d4645f498b5f3a0f955fdc6"
+            ],
+            "mdmFieldSurvivorshipRules": [
+                {
+                    "mdmEntityTemplateId": "a24150eb99804fd1954bd5fc890e986f",
+                    "mdmEntityType": "mdmFieldSurvivorshipRule",
+                    "mdmFieldId": "67cf62180fe14088b942a20ffbd64e22",
+                    "mdmFunction": {
+                        "mdmDescription": {
+                            "en-US": "the most recent value",
+                            "pt-BR": "o valor mais recente"
+                        },
+                        "mdmEntityType": "mdmSurvivorshipFunction",
+                        "mdmId": "27439baa3c0bbf323ca50b46fb95ea51",
+                        "mdmLabel": {
+                            "en-US": "Recency"
+                        },
+                        "mdmName": "RECENCY",
+                        "mdmParameters": [],
+                        "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+                    },
+                    "mdmFunctionId": "27439baa3c0bbf323ca50b46fb95ea51",
+                    "mdmId": "c3bbf9c28d4645f498b5f3a0f955fdc6",
+                    "mdmParameterValues": [],
+                    "mdmParentFieldId": "",
+                    "mdmState": "NOT_CHANGED",
+                    "mdmSurviveUsingFieldName": "",
+                    "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+                }
+            ],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFlagRuleIds": [],
+            "mdmFlagRules": [],
+            "mdmForeignKeyField": false,
+            "mdmHasMapping": false,
+            "mdmHasView": false,
+            "mdmHidden": false,
+            "mdmId": "67cf62180fe14088b942a20ffbd64e22",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmMappingDataType": "string",
+            "mdmMappings": [],
+            "mdmName": "sourceairportname",
+            "mdmRequiredBy": "",
+            "mdmSizeLimit": 300,
+            "mdmSkipRuleIds": [],
+            "mdmSkipRules": [],
+            "mdmTags": []
+        }
+    ],
+    "fieldsFull": {
+        "airlinename": {
+            "mdmAnalyzer": "standard",
+            "mdmDescription": {
+                "en-US": "Nome da companhia aérea"
+            },
+            "mdmEntityType": "mdmField",
+            "mdmEnumValues": [],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFieldsFull": {},
+            "mdmForeignKeyField": false,
+            "mdmHidden": false,
+            "mdmId": "30d2eeacd6564718b2f8581ce1da276e",
+            "mdmIndex": "analyzed",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmLabel": {
+                "en-US": "Airline Name"
+            },
+            "mdmMappingDataType": "string",
+            "mdmName": "airlinename",
+            "mdmSizeLimit": 300,
+            "mdmTags": [],
+            "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+        },
+        "routeid": {
+            "mdmAnalyzer": "standard",
+            "mdmDescription": {
+                "en-US": "ID único da rota"
+            },
+            "mdmEntityType": "mdmField",
+            "mdmEnumValues": [],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFieldsFull": {},
+            "mdmForeignKeyField": false,
+            "mdmHidden": false,
+            "mdmId": "38f29c098c9c4abdb2e501cf5bb0a8e8",
+            "mdmIndex": "analyzed",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmLabel": {
+                "en-US": "Route Id"
+            },
+            "mdmMappingDataType": "long",
+            "mdmName": "routeid",
+            "mdmSizeLimit": 2048,
+            "mdmTags": [],
+            "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+        },
+        "sourceairportname": {
+            "mdmAnalyzer": "standard",
+            "mdmDescription": {
+                "en-US": "Nome do aeroporto de saída"
+            },
+            "mdmEntityType": "mdmField",
+            "mdmEnumValues": [],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFieldsFull": {},
+            "mdmForeignKeyField": false,
+            "mdmHidden": false,
+            "mdmId": "67cf62180fe14088b942a20ffbd64e22",
+            "mdmIndex": "analyzed",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmLabel": {
+                "en-US": "Source Airport Name"
+            },
+            "mdmMappingDataType": "string",
+            "mdmName": "sourceairportname",
+            "mdmSizeLimit": 300,
+            "mdmTags": [],
+            "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+        },
+        "sourceairportid": {
+            "mdmAnalyzer": "standard",
+            "mdmDescription": {
+                "en-US": "ID único do aeroporto de saída"
+            },
+            "mdmEntityType": "mdmField",
+            "mdmEnumValues": [],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFieldsFull": {},
+            "mdmForeignKeyField": false,
+            "mdmHidden": false,
+            "mdmId": "8468d784f30b408c94867c8c28176576",
+            "mdmIndex": "analyzed",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmLabel": {
+                "en-US": "Source Airport Id"
+            },
+            "mdmMappingDataType": "long",
+            "mdmName": "sourceairportid",
+            "mdmSizeLimit": 2048,
+            "mdmTags": [],
+            "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+        },
+        "airlineid": {
+            "mdmAnalyzer": "standard",
+            "mdmDescription": {
+                "en-US": "ID único da companhia aérea"
+            },
+            "mdmEntityType": "mdmField",
+            "mdmEnumValues": [],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFieldsFull": {},
+            "mdmForeignKeyField": false,
+            "mdmHidden": false,
+            "mdmId": "9beb480526b0435f97eeb6275b4fb43a",
+            "mdmIndex": "analyzed",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmLabel": {
+                "en-US": "Airline Id"
+            },
+            "mdmMappingDataType": "long",
+            "mdmName": "airlineid",
+            "mdmSizeLimit": 2048,
+            "mdmTags": [],
+            "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+        },
+        "destinationairportname": {
+            "mdmAnalyzer": "standard",
+            "mdmDescription": {
+                "en-US": "Nome do aeroporto de chegada"
+            },
+            "mdmEntityType": "mdmField",
+            "mdmEnumValues": [],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFieldsFull": {},
+            "mdmForeignKeyField": false,
+            "mdmHidden": false,
+            "mdmId": "c3820621ce7243a99682e532f6433c13",
+            "mdmIndex": "analyzed",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmLabel": {
+                "en-US": "Destination Airport Name"
+            },
+            "mdmMappingDataType": "string",
+            "mdmName": "destinationairportname",
+            "mdmSizeLimit": 300,
+            "mdmTags": [],
+            "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+        },
+        "destinationairportid": {
+            "mdmAnalyzer": "standard",
+            "mdmDescription": {
+                "en-US": "ID único do aeroporto de chegada"
+            },
+            "mdmEntityType": "mdmField",
+            "mdmEnumValues": [],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFieldsFull": {},
+            "mdmForeignKeyField": false,
+            "mdmHidden": false,
+            "mdmId": "ffb03397f42440a49a28795d75e29311",
+            "mdmIndex": "analyzed",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmLabel": {
+                "en-US": "Destination Airport Id"
+            },
+            "mdmMappingDataType": "long",
+            "mdmName": "destinationairportid",
+            "mdmSizeLimit": 2048,
+            "mdmTags": [],
+            "mdmTenantId": "9d630c080f6f4119a916bf1d0232375d"
+        }
+    },
+    "groupName": "OpenFlights",
+    "label": {
+        "en-US": "Routes"
+    },
+    "mdmClusterAndPartitioningBqOptions": {
+        "mdmClusteringBqOptions": {
+            "fieldsSelected": [
+                {
+                    "name": "mdmTenantId",
+                    "type": "string"
+                },
+                {
+                    "name": "mdmId",
+                    "type": "string"
+                },
+                {
+                    "name": "mdmCounterForEntity",
+                    "type": "long"
+                }
+            ]
+        },
+        "mdmDefaultBqOptions": true,
+        "mdmPartitionBqOptions": {
+            "fieldName": "mdmCounterForEntity__DATETIME__",
+            "fieldType": "date",
+            "partitionedBy": "TIME_UNIT_COLUMN",
+            "unitTime": "DAILY"
+        }
+    },
+    "profileTitleFields": [
+        "airlinename",
+        "destinationairportname",
+        "sourceairportname"
+    ],
+    "snapshotCreationTime": "2022-10-09T21:56:00.395Z",
+    "storageTypes": {},
+    "tags": [],
+    "verticals": [
+        {
+            "mdmDescription": {
+                "en-US": "Services",
+                "pt-BR": "Serviços"
+            },
+            "mdmEntityType": "mdmVertical",
+            "mdmId": "1fece0cb254f1f45891bc9ee9fed72a9",
+            "mdmName": "crm",
+            "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+        }
+    ]
+}
