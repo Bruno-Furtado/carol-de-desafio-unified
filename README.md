@@ -90,7 +90,7 @@ Abaixo, segue uma explicação básica sobre os IDs que serão úteis para cria�
 
 ### 2.2. Ingestão de dados
 
-Depois disso, execute os scripts os scripts abaixo para popular cada uma das tabelas recém criadas.
+Depois disso, execute os scripts abaixo para popular cada uma das tabelas recém criadas.
 
 - [02-insert-airports.sql](https://github.com/Bruno-Furtado/carol-de-desafio-unified/blob/main/mysql/02-insert-airports.sql): Popula a tabela `airports` com os dados dos aeroportos.
 - [03-insert-airlines.sql](https://github.com/Bruno-Furtado/carol-de-desafio-unified/blob/main/mysql/03-insert-airlines.sql): Popula a tabela `airlines` com os dados das companhias aéreas.
