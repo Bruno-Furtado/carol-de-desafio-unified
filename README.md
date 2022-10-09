@@ -1,4 +1,4 @@
-# Carol data engineering challenge: Unified
+# Carol - Data Engineering - Challenge: Unified
 
 Este repositório tem por objetivo apresentar como utilizar o processamento de dados SQL unificado na plataforma Carol.
 
