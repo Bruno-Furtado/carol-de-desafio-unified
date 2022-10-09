@@ -106,8 +106,8 @@ Com ele instalado, vamos configura-lo para que o mesmo envie os dados do MySQL p
 
 ## 4. Configurar processamento SQL unificado
 
-O primeiro passo é instalar o aplicativo **OpenFlights** no ambiente unificado (furtadounif).
+O primeiro passo é instalar o aplicativo **OpenFlights** no ambiente unificado (**furtadounif**).
 
-Depois disso, tendo a certeza de que todos os dados do 2C foram enviados ao ambiente do cliente, temos de instalar o aplicativo no ambiente do mesmo (furtadocustomer).
+Depois disso, tendo a certeza de que todos os dados do 2C foram enviados ao ambiente do cliente, temos de instalar o aplicativo no ambiente do mesmo (**furtadocustomer**).
 
-Uma vez terminada a instalação no ambiente do cliente, a própria Carol iniciará o envio dos dados da furtadocustomer para furtadounif. Com os dados no ambiente unificado, o processamento da pipeline é executado e a DM `Routes` dos ambientes é populada. Esta etapa encerra o fluxo de processamento SQL unificado.
+Uma vez terminada a instalação no ambiente do cliente, a própria Carol iniciará o envio dos dados da **furtadocustomer** para **furtadounif**. Com os dados no ambiente unificado, o processamento da pipeline é executado e a DM `Routes` é populada e os dados são direcionados para o ambiente do customer. Esta etapa encerra o fluxo de processamento SQL unificado.
