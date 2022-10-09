@@ -111,3 +111,15 @@ O primeiro passo é instalar o aplicativo **OpenFlights** no ambiente unificado 
 Depois disso, tendo a certeza de que todos os dados do 2C foram enviados ao ambiente do cliente, temos de instalar o aplicativo no ambiente do mesmo (**furtadocustomer**).
 
 Uma vez terminada a instalação no ambiente do cliente, a própria Carol iniciará o envio dos dados da **furtadocustomer** para **furtadounif**. Com os dados no ambiente unificado, o processamento da pipeline é executado e a DM `Routes` é populada e os dados são direcionados para o ambiente do customer. Esta etapa encerra o fluxo de processamento SQL unificado.
+
+
+## 5. Utilizar dados processados para gerar Insights
+
+Para este exemplo vamos utilizar o [Carol Insights](https://carol.ai/insights) para apresentar gráficos a partir dos dados gerados para DM `Routes`.
+
+Os gráficos foram gerados a partir da tenant unificada pois o intuito aqui foi exemplificar como é possígel gerar estatísticas de todos os clientes que possuem um app instalado a partir de uma fonte de dados única. As queries podem ser encontradas [nesta pasta](https://github.com/Bruno-Furtado/carol-de-desafio-unified/tree/main/insights).
+
+[Este dashboard](https://carol.ai/insights/dashboard/452-openflights) apresenta os seguintes gráficos como resultado final deste desafio:
+- Rotas de vô por companhia aérea
+- Top 10 companhias com mais vôos
+- Top 10 destinos de voôs
