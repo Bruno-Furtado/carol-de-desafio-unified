@@ -29,7 +29,7 @@ Feito, a máquina virtual já está criada! Agora precisamos apontar para imagem
 
 Agora inicie a máquina virtual e siga os passos para concluir a instalação do Windows 10. Tudo pronto!
 
-## 1.2. Banco de dados
+### 1.2. Banco de dados
 
 Todos os passos descritos nesta etapa serão realizados dentro da máquina virtual recém instalada.
 
@@ -41,9 +41,9 @@ Para visualizar o banco de dados utilizaremos o MySQL Workbench que pode ser obt
 
 Concluída ambas as instalações, abra o MySQL Workbench e uma instância já estará disponível para uso. Entre nela utilizando a senha configurada na etapa de instalação do banco de dados MySQL. Por enquanto paramos por aqui.
 
-## 1.3. Carol
+### 1.3. Carol
 
-### Tenants
+#### Tenants
 
 O próximo passo consiste na criação dos seguintes ambientes:
 
@@ -55,7 +55,7 @@ O próximo passo consiste na criação dos seguintes ambientes:
 
 > Todos os ambientes criados são SQL Processing Only e não possuem a camada RT habilitada (seguindo as orientações mais atuais da plataforma).
 
-### App OpenFlights
+#### App OpenFlights
 
 Com o ambiente **furtadodev** pronto para uso, vamos criar o aplicativo **OpenFlights**, neste ambiente, com a seguinte estrutura:
 
