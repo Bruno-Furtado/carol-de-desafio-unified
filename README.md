@@ -67,7 +67,7 @@ O aplicativo possui as seguintes configurações:
 | Unified tenant | furtadounif | Responsável por executar as pipelines e processar dados de todos os ambientes que possuem o app. |
 | Git | Este repositório | Aponta para este repositório utilizando o arquivo [pipelines.json](https://github.com/Bruno-Furtado/carol-de-desafio-unified/blob/main/pipeline/pipelines.json) localizado dentro da pasta `pipeline`. |
 
-> Como este não híbrido, ao instala-lo em um ambiente do tipo customer, este ambiente já é linkado automaticamente com o ambiente unified. Portanto não há a necessidade de linkar via API.
+> Como este app não híbrido, ao instala-lo em um ambiente do tipo customer, este ambiente já é linkado automaticamente com o ambiente unified. Portanto não há a necessidade de linkar via API.
 
 ## 2. Configurar base de dados
 
