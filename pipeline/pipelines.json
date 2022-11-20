@@ -1,15 +1,13 @@
 {
     "defaults":
     {
-        "cronExpressions":
-        [
-            "0 0/5 * ? * * *"
-        ],
+        "cronExpressions": [],
         "prepareScripts":[]
     },
     "pipelines":
     [
         {
+            "cronExpressions": ["0 0,15,30,45 0 ? * * *"]
             "pipelineName": "routes",
             "pipelineDescription": "Companhias aéres que operam vôos.",
             "outputDataModelName": "routes",
